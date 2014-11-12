@@ -22,8 +22,14 @@ public class NumberDisplay
     public String getDisplayValue()
     {
         String displayValue;
+        if (display<10 & display>=0)
+        {
         displayValue = "0" + display;
-        
+    }
+    else
+    {
+        displayValue = "" + display;
+    }
         return displayValue;
         
     }
